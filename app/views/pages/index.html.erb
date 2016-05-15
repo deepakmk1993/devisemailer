@@ -1,11 +1,13 @@
-<div class="jumbotron">
-  <h1>Deepak's Articles</h1>
-  <p>Welcome to Deepak's Articles</p>
-  <p><%= link_to "Learn more", articles_path, class: 'btn btn-primary outline' %></p>
-</div>
 <div class="row">
-  <h3>Recent Articles</h3><hr />
-  <div class="col-md-12">
+  <div class="col-md-8">
+    <div class="jumbotron">
+      <h1>Deepak's Articles</h1>
+      <p>Welcome to Deepak's Articles</p>
+      <p><%= link_to "Learn more", articles_path, class: 'btn btn-primary outline' %></p>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <h3>Recent Articles</h3><hr />
     <% @articles.each do |a| %>
       <strong><%= link_to a.title, a %></strong>
       <p><%= truncate(a.body) %></p>
