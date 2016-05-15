@@ -3,7 +3,7 @@
     <div class="jumbotron">
       <h1>Deepak's Articles</h1>
       <p>Welcome to Deepak's Articles</p>
-      <p><%= link_to "Learn more", articles_path, class: 'btn btn-primary outline' %></p>
+      <p><%= link_to "Learn more", articles_path, class: 'btn btn-primary outline' if current_user %></p>
     </div>
   </div>
   <div class="col-md-4">
@@ -11,6 +11,7 @@
     <% @articles.each do |a| %>
       <strong><%= link_to a.title, a %></strong>
       <p><%= truncate(a.body) %></p>
+      <p align="right">Created By: <%= a.user.username %></p>
     <% end %>
   </div>
 </div>

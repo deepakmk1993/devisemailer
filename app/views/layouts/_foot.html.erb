@@ -1,39 +1,5 @@
-<% if current_user %>
 <footer class="footer">
   <div class="container">
     <center>© 2016 Design and Developed by <strong><i>Deepak Gupta</i></strong>. All rights reserved to Deepak.</center>
   </div>
 </footer>
-
-<% else %>
-<footer class="footer">
-<div class="container ">
-<div class="row">
-  <form role="form" action="" method="post" >
-    <div class="col-lg-6">
-      <div class="form-group">
-        <label for="InputEmail">Your Email</label>
-          <input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Enter Email" required  >
-      </div>
-      <div class="form-group">
-        <label for="InputMessage">Message</label>
-          <textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required></textarea>
-      </div>
-      <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info pull-right outline">
-    </div>
-  </form>
-  <br>
-  <hr class="featurette-divider hidden-lg">
-  <div class="col-lg-5 col-md-push-1">
-    <address>
-    <h3>Office Location</h3>
-    <p class="lead"><a href="#">The Pentagon<br>
-Washington, DC 20301</a><br>
-      Phone: XXX-XXX-XXXX</p>
-    </address>
-    <p>© 2016 Design and Developed by <i>Deepak Gupta</i>. All rights reserved to Deepak.</p>
-  </div>
-</div>
-</div>
-</footer>
-<% end %>
