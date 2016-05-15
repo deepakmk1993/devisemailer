@@ -1,29 +1,19 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.footer {
-  color: white;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background-color: #963F3F;
-  padding-top: 20px;
-}
-footer input, footer textarea {
-  color: white !important;
-}
-.footer1 {
-  position: relative;
-  margin-top: 10px;
-  padding: 20px 0;
-}
 .outline {
   border-radius: 4px;
 }
 .lead {
   color: white;
 }
+html, body {
+  height: 100%;
+}
+.container{
+  min-height:81.2%;
+}
 body {
   color: #f04124;
-  background: linear-gradient(rgba(196, 102, 0, 0.1), rgba(155, 89, 182, 0.2));
+  background: linear-gradient(rgba(196, 102, 0, 0.1), rgba(155, 89, 182, 0.2)) fixed;
 }
 input,textarea {
   background:none !important;
