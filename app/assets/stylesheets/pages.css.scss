@@ -1,5 +1,3 @@
-// Place all the styles related to the pages controller here.
-// They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .footer {
   color: white;
@@ -9,20 +7,34 @@
   background-color: #963F3F;
   padding-top: 20px;
 }
+footer input, footer textarea {
+  color: white !important;
+}
 .footer1 {
   position: relative;
   margin-top: 10px;
   padding: 20px 0;
-}
-.form-control-feedback {
-  position: relative;
-  display: inline;
-  top: 0;
-  line-height: 14px;
 }
 .outline {
   border-radius: 4px;
 }
 .lead {
   color: white;
+}
+body {
+  color: #f04124;
+  background: linear-gradient(rgba(196, 102, 0, 0.1), rgba(155, 89, 182, 0.2));
+}
+input,textarea {
+  background:none !important;
+}
+/* when a field is considered invalid by the browser */
+form input:focus:invalid, form textarea:focus:invalid {
+  border-color: #b03535;
+  box-shadow: 0 0 5px #d45252;
+}
+/* when a field is considered valid by the browser */
+form input:required:valid, form textarea:required:valid {
+  border-color: #28921f;
+  box-shadow: 0 0 5px #5cd053;
 }
