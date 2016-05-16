@@ -20,9 +20,7 @@ body {
   padding-bottom: 10px;
   background-color: #963F3F;
 }
-input,textarea {
-  background:none !important;
-}
+
 /* when a field is considered invalid by the browser */
 form input:focus:invalid, form textarea:focus:invalid {
   border-color: #b03535;
